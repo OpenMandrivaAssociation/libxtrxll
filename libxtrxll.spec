@@ -17,7 +17,6 @@ Source:         %{name}-%{version}.tar.xz
 Patch0:         libxtrxll-fix-udev-permissions.patch
 BuildRequires:  cmake
 BuildRequires:  git-core
-BuildRequires:  pkgconfig
 BuildRequires:  pkgconfig(libusb)
 BuildRequires:  pkgconfig(libusb3380)
 
