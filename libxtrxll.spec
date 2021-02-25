@@ -1,3 +1,4 @@
+%define commit 1b6eddfbedc700efb6f7e3c3594e43ac6ff29ea4
 %define xtrx_group xtrx
 %define sover   0
 %define libname libxtrxll%{sover}
@@ -13,7 +14,7 @@ License:        LGPL-2.1-only
 Group:          Development/Libraries/C and C++
 URL:            http://xtrx.io
 #Git-Clone:     https://github.com/xtrx-sdr/libxtrxll.git
-Source:         %{name}-%{version}.tar.xz
+Source0:	https://github.com/xtrx-sdr/libxtrxll/archive/%{commit}.zip
 Patch0:         libxtrxll-fix-udev-permissions.patch
 BuildRequires:  cmake
 BuildRequires:  git-core
@@ -61,7 +62,7 @@ BuildArch:      noarch
 Udev rules for XTRX USB devices.
 
 %prep
-%autosetup -p1
+%setup -q -n %{name}-%{commit}
 
 %build
 export CFLAGS="%{optflags} -lusb-1.0"
