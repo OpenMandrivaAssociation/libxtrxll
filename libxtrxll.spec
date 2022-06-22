@@ -8,7 +8,7 @@
 
 Name:           libxtrxll
 Version:        0.0.0+git.20201202
-Release:        1.1
+Release:        1.2
 Summary:        XTRX Low-level API library
 License:        LGPL-2.1-only
 Group:          Development/Libraries/C and C++
