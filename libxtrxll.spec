@@ -12,7 +12,7 @@ Release:        1.3
 Summary:        XTRX Low-level API library
 License:        LGPL-2.1-only
 Group:          Development/Libraries/C and C++
-URL:            http://xtrx.io
+URL:            https://xtrx.io
 #Git-Clone:     https://github.com/xtrx-sdr/libxtrxll.git
 Source0:	https://github.com/xtrx-sdr/libxtrxll/archive/%{commit}.zip
 Patch0:         libxtrxll-fix-udev-permissions.patch
